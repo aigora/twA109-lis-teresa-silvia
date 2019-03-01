@@ -12,4 +12,4 @@ Teresa Ramírez Haro: teresaramirezharo
 
 ## Objetivos del trabajo
 
-Lista de los objetivos que se persiguen con el trabajo propuesto.
+El objetivo es crear una instalación eléctrica de iluminación que pueda ser modificada desde el ordenador.
