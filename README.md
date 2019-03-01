@@ -1,10 +1,13 @@
 # Título del trabajo
 
-Descripción breve del proyecto a realizar (2-3 frases).
+El proyecto consiste en un detector de presencia que hará que se active un panel en el que,
+con una serie de combinaciones, se pueda controlar una instalación eléctrica de iluminación.
 
 ## Integrantes del equipo
 
-Nombres, apellidos, y usuario GitHub de los integrantes del equipo.
+Lis Muñoz Fortea: lismunozfortea
+Silvia Saeta Álvarez: ssaetaa
+Teresa Ramírez Haro: teresaramirezharo
 
 ## Objetivos del trabajo
 
