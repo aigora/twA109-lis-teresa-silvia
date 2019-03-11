@@ -16,7 +16,11 @@ El objetivo es crear una instalación eléctrica de iluminación que pueda ser m
 
 ## Componentes previstos a usar en el trabajo
 -Detector de presencia.
+
 -Leds.
+
 -Placa Arduino.
+
 -Dispositivo donde se introducira el código pertinente.
+
 -Ordenador.
