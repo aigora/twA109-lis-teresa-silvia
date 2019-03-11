@@ -15,12 +15,15 @@ Teresa Ramírez Haro: teresaramirezharo
 El objetivo es crear una instalación eléctrica de iluminación que pueda ser modificada desde el ordenador.
 
 ## Componentes previstos a usar en el trabajo
--Detector de presencia.
+
+-Detector de presencia por ultrasonidos.
 
 -Leds.
 
 -Placa Arduino.
 
--Dispositivo donde se introducira el código pertinente.
+-Pulsadores.
 
 -Ordenador.
+
+-Pantalla LCD.
