@@ -1,4 +1,4 @@
-# Título del trabajo
+# Sistema de iluminación a través de una clave
 
 El proyecto consiste en un detector de presencia que hará que se active un panel en el que, con una serie de combinaciones, se pueda controlar una instalación eléctrica de iluminación.
 
@@ -22,7 +22,7 @@ El objetivo es crear una instalación eléctrica de iluminación que pueda ser m
 
 -Placa Arduino.
 
--Pulsadores.
+-Teclado matricial.
 
 -Ordenador.
 
