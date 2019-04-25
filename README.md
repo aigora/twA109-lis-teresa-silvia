@@ -1,6 +1,6 @@
 # Sistema de iluminación a través de una clave
 
-El proyecto consiste en un detector de presencia que hará que se active un panel en el que, con una serie de combinaciones, se pueda controlar una instalación eléctrica de iluminación.
+El proyecto consiste en un detector de presencia que hará que se active un panel en el que, con una serie de combinaciones, pueda controlar una instalación eléctrica de iluminación.
 
 ## Integrantes del equipo
 
