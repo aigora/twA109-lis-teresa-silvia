@@ -2,6 +2,8 @@
 
 El proyecto consiste en un detector de presencia que hará que se active un panel en el que, con una serie de combinaciones, pueda controlar una instalación eléctrica de iluminación.
 
+La comunicación de C con Arduino está hecha para Linux.
+
 ## Integrantes del equipo
 
 Lis Muñoz Fortea: lismunozfortea
