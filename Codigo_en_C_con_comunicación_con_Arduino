@@ -1,0 +1,115 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <unistd.h> //Biblioteca para la funciÃ³n sleep
+#define n 10
+typedef struct //Definimos la estructura necesaria para los leds
+{
+	char color[n];
+	int salida;//Posicion que ocupara el led
+}diodo;
+
+void guardar_led(diodo);
+int menu (void);
+
+int main(void) 
+{
+	diodo led;
+	int opcion,i;
+	
+	for (i=0;i<n;i++)
+		led.color[i]='\0';//Para que no haya problema con los colores y numeros de salida
+		
+	opcion=menu();//Menu  de opciones para que el usuario ponga lo que quiere encender
+	switch (opcion)//Se definen asi los colores para poder usar la funcion que compara cadenas sin que puedan surgir errores por no estar exactamente igual
+	{
+			case 1:
+				{
+				led.color[0]='a';
+				led.color[1]='z';
+				led.color[2]='u';
+				led.color[3]='l';
+				}break;
+			case 2:
+				{
+				led.color[0]='v';
+				led.color[1]='e';
+				led.color[2]='r';
+				led.color[3]='d';
+				led.color[4]='e';
+				}break;
+			case 3:	
+				{
+				led.color[0]='r';
+				led.color[1]='o';
+				led.color[2]='j';
+				led.color[3]='o';
+				}break;
+			case 4:
+				{
+				led.color[0]='a';
+				led.color[1]='m';
+				led.color[2]='a';
+				led.color[3]='r';
+				led.color[4]='i';
+				led.color[5]='l';
+				led.color[6]='l';
+				led.color[7]='o';
+				}break;
+			default:printf("No existe led de ese color");break;
+	}
+	if (strcmp(led.color,"azul")==0)//Es igual el color a azul
+		led.salida=1;//El led azul esta en la salida 1
+		
+	else 
+	{
+		if(strcmp(led.color,"verde")==0)
+			led.salida=2;
+			
+		else
+		{
+			if(strcmp(led.color,"rojo")==0)
+				led.salida=3;
+			else
+			{
+				if(strcmp(led.color,"amarillo")==0)
+					led.salida=0;
+			}
+		}
+		}//Ponemos if para que sea mas facil la comprension del texto por parte de gente ajena
+		
+	
+	guardar_led(led);//Guardar el numero de salida del led en un fichero aparte
+	
+	system("pause");
+	return 0;
+}
+
+
+int menu (void)
+{ 
+	int opcion;
+		printf("1_Azul\n");	
+		printf("2_Verde\n");	
+		printf("3_Rojo\n");	
+		printf("4_Amarillo\n");
+		scanf("%d",&opcion);
+		
+	return (opcion);
+}
+
+
+void guardar_led(diodo l)
+{
+	FILE *guardar;   
+	guardar=fopen("/dev/ttyACM0","w"); //Se abre el fichero del puerto serie
+	
+ 	if (guardar==NULL)   
+ 		printf ("No se ha podido establecer la comunicacion\n"); 
+ 	else  
+	 {   
+		fprintf(guardar,"%d",l.salida); //Se escribe el numero de salida del led
+		sleep(3);
+ 		fclose (guardar);  
+	 } 
+} 
