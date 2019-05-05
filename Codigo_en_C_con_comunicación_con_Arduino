@@ -16,9 +16,6 @@ int main(void)
 {
 	diodo led;
 	int opcion,i;
-	
-	for (i=0;i<n;i++)
-		led.color[i]='\0';//Para que no haya problema con los colores y numeros de salida
 		
 	opcion=menu();//Menu  de opciones para que el usuario ponga lo que quiere encender
 	switch (opcion)//Se definen asi los colores para poder usar la funcion que compara cadenas sin que puedan surgir errores por no estar exactamente igual
