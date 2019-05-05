@@ -25,36 +25,19 @@ int main(void)
 	{
 			case 1:
 				{
-				led.color[0]='a';
-				led.color[1]='z';
-				led.color[2]='u';
-				led.color[3]='l';
+				strcpy (led.color,"azul");
 				}break;
 			case 2:
 				{
-				led.color[0]='v';
-				led.color[1]='e';
-				led.color[2]='r';
-				led.color[3]='d';
-				led.color[4]='e';
+				strcpy (led.color,"verde");
 				}break;
 			case 3:	
 				{
-				led.color[0]='r';
-				led.color[1]='o';
-				led.color[2]='j';
-				led.color[3]='o';
+				strcpy (led.color,"rojo");
 				}break;
 			case 4:
 				{
-				led.color[0]='a';
-				led.color[1]='m';
-				led.color[2]='a';
-				led.color[3]='r';
-				led.color[4]='i';
-				led.color[5]='l';
-				led.color[6]='l';
-				led.color[7]='o';
+				strcpy (led.color,"amarillo");
 				}break;
 			default:printf("No existe led de ese color");break;
 	}
